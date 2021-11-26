@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Submitter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TASK Submitter</h1>
+    </header>
+    <div class="info">
+        This is a place where your employees have to submit your assignment/s!!!
+    </div>
+    <form action="#">
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myfile" name="myfile" required multiple><br><br>
+        <input type="submit" id="submit">
+    </form>
+    <script>
+        $("#submit").click(function() {
+           alert("The file/s has been Submitted.");
+        });
+     </script>
+</body>
+</html>
